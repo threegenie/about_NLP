@@ -1,0 +1,14 @@
+- 기계학습이란 : 사람이 코드로 명시하지 않은 동작을 데이터로부터 스스로 학습하여 실행하는 알고리즘을 개발하는 것
+- Machine learning이 주목받은 것은 Netflix의 추천 시스템 이후 - 사용자간 유사도와 콘텐츠간 유사도를 조합하여 추천 콘텐츠 도출
+- Deep learning이 주목받은 것은 알파고 이후
+- 기계학습의 목적 : Data로부터 Specific한 문제 해결을 위한 최적의 모델 만들기
+- Andrew Ng : 좋은 데이터를 수집하는 것이 기계학습에서 가장 중요한 부분 중 하나이다
+- Probability가 100이거나 동시에 Bias와 Variance을 최소로 줄이는 방법은 없기 때문에, 학습 데이터 구성 시에는 Loss를 최대한 줄일 수 있도록 해야 함
+- 풀고자 하는 문제에 따라 다른 모델을 사용해야 함
+- 데이터 학습과 검증을 위해 훈련/검증/시험셋 구성
+- Cross validation - K-fold CV, ShuffleSplit CV, GroupKFold, RepeatedKFold
+- 1종 오류, 2종 오류
+    - 1종 오류 : 가설이 참이어서 채택해야 하는데 하지 않음, False Positive
+    - 2종 오류 : 가설이 거짓이어서 채택하지 않아야 하는데 채택함, False Negative
+- Supervised Learning 과정
+    - Raw data → Pre-processing(결측치 처리, 특성 추출) → 샘플링 → train-test split → Pre-processing(특성 선택, Scaling, 차원축소) → ML/DL Modeling → Hyperparameter 조정 → Post-processing OR Pre-processing → Final model selection
